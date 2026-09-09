@@ -2,443 +2,425 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Antonio Azaf</title>
 </head>
 <body>
-
-<!-- Menu Encabezado -->
-<div class="contenedor-header">
-    <header>
-    <div class="logo">
-        <a href="index.html">Antonio Azaf</a>
-        </div>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Antonio Azaf</a>
+            </div>
             <nav id="nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#sobremi">Sobre Mi </a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>            
-            </ul>
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
             </nav>
-    <div class="nav-responsive">
-<i class="fa-solid fa-bars"></i>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
     </div>
-    </header>
-</div>
 
-<!-- Seccion Inicio -->
-<section id="inicio" class="inicio">
-    <div class="contenido-banner">
-        <div class="contenedor-img">
-            <img src="img/hero.png" alt="Foto de Antonio Azaf">
-        </div>
-        <h1>Hola, soy <span>Antonio Azaf</span></h1>
-        <h2>Ingeniero y Desarrollador Frontend </h2>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </div>
-</section>
-
-<!-- Seccion sobre mi -->
-
-<section id="sobremi" class="sobremi">
-<div class="contenido-seccion">
-    <h2>Sobre Mi</h2>
-    <p><span>Soy un ingeniero apasionado por la tecnología</span> y el desarrollo web. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam excepturi illum nihil repellat eos? Saepe, praesentium expedita. Architecto commodi suscipit cupiditate tempora. Eum fugiat aliquam sunt molestiae corporis?</p>
-<!-- datos personales -->
-    <div class="fila">
-        <div class="col">
-            <h3>Datos Personales</h3>
-            <ul>
-                <li><strong>Cumpleaños:</strong> 26/02/1993</li>
-                <li><strong>Telefono:</strong> +58 424 907 8597</li>
-                <li><strong>Correo:</strong> rafaazaf93@gmail.com</li>
-                <li><strong>Direccion:</strong> Venezuela, Monagas, Maturín</li>
-                <li><strong>Cargo:</strong><span>Freelancer</span> </li>
-            </ul>
-        </div>
-        <!-- intereses -->
-    <div class="col">
-        <h3>Intereses</h3>
-        <div class="contenedor-intereses">
-            <div class="intereses">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>Juegos</span>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Antonio.jpeg" alt="Antonio Azaf">
             </div>
-            <div class="intereses">
-                <i class="fa-solid fa-headphones"></i>
-                <span>Música</span>
-            </div>
-            <div class="intereses">
-                <i class="fa-solid fa-plane"></i>
-                <span>Viajes</span>
-            </div>
-            <div class="intereses">
-                <i class="fa-brands fa-windows"></i>
-                <span>Windows</span>
-            </div>
-            <div class="intereses">
-                <i class="fa-solid fa-person-hiking"></i>
-                <span>Deportes</span>
-            </div>
-            <div class="intereses">
-                <i class="fa-solid fa-book"></i>
-                <span>Libros</span>
-            </div>
-            <div class="intereses">
-                <i class="fa-solid fa-car"></i>
-                <span>Autos</span>
-            </div>
-            <div class="intereses">
-                <i class="fa-solid fa-camera"></i>
-                <span>Fotos</span>
-            </div>
-
-        </div>
-    </div>
-    
-    </div>
-    <button>Descargar CV <i class="fa-solid fa-download"></i>
-    <span class="overlay"></span>
-    </button>
-    
-</div>
-
-</section>
-
-<!-- Seccion Skills -->
- <section id="skills" class="skills">
-    <div class="contenido-section">
-        <h2>Skills</h2>
-        <div class="fila">
-            <!-- technical skills -->
-             <div class="col">
-                <h3>Technical Skills</h3>
-                <div class="skill">
-                    <span>Javascript</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>75%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>HTML & CSS</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>90%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>React</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>70%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Figma</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>75%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Data Base</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>73%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Illustrator</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>65%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>WordPress</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>82%</span>
-                        </div>
-                    </div>
-             </div>
-            </div>
-            <!-- Profesional Skills -->
-            <div class="col">
-                <h3>Profesional Skills</h3>
-                <div class="skill">
-                    <span>Comunicación</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>85%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Trabajo en Equipo</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                        </div>
-                        <div class="skill">
-                    <span>Resolución de Problemas</span>
-                    <div class="barra-skill">
-                        <div class="progreso ">
-                            <span>85%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Creatividad</span>
-                    <div class="barra-skill">
-                        <div class="progreso ">
-                            <span>90%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Dedicación</span>
-                    <div class="barra-skill">
-                        <div class="progreso ">
-                            <span>75%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Project Management</span>
-                    <div class="barra-skill">
-                        <div class="progreso ">
-                            <span>73%</span>
-                        </div>
-                    </div>
-             </div>
-             <div class="skill">
-                    <span>Liderazgo</span>
-                    <div class="barra-skill">
-                        <div class="progreso ">
-                            <span>82%</span>
-                        </div>
-                    </div>
-             </div>
-                    </div>
-             </div>
-             
-             
-             
-             
-             
+            <h1>Antonio Azaf</h1>
+            <h2>Ingeniero de Sistemas - Experto UI/UX / WordPress</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/antonio.rafax/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/antoniorazaf/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/antonio-azaf-679222355/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:rafaazaf93@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
- </section>
+    </section>
 
- <!-- Seccion de Curriculum -->
-  <section id="curriculum" class="curriculum">
-    <div class="contenido-section">
-        <h2>Curriculum</h2> 
-       <div class="fila">
-        <div class="col izquierda">
-            <h3>Educación</h3>
-            <div class="item izq">
-                <h4>Ingenieria de Sistemas</h4>
-                <span class="casa">Universidad de Oriente</span>
-                <span class="fecha">2020 - 2026</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nihil officia, quos ex aliquid porro atque quam mollitia quod esse iste reiciendis soluta autem commodi nobis! Accusamus dicta dolorum aut inventore aperiam id. Reiciendis quibusdam harum excepturi dolores libero eveniet culpa minus ipsa assumenda autem. Earum doloremque excepturi neque aliquid tempore, accusamus provident? Aliquid veniam, id nihil blanditiis obcaecati, modi illum aliquam rerum unde, molestias consectetur deserunt sit?</p>
-                <div class="conectori">
-                    <div class="circuloi">
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Antonio Azaf.</span> Ingeniero de Sistemas con experiencia en gestión de proyectos tecnológicos, planificación estratégica e implementación de metodologías ágiles. Trayectoria demostrada liderando equipos multidisciplinarios y gestionando la entrega de soluciones digitales de alto volumen para clientes internacionales en sectores como salud, finanzas y construcción. Especialista en la aplicación de estándares de calidad (ISO 9000), diseño de métricas de rendimiento (KPIs), diagnósticos operacionales cuantitativos y automatización de flujos de trabajo con Inteligencia Artificial. Sólidas habilidades en levantamiento de requerimientos, gestión de infraestructura tecnológica y mejora continua del rendimiento operacional.</p>
 
-                    </div>
-                </div>
-            </div>
-
-            <div class="item izq">
-                <h4>Ingenieria de Sistemas</h4>
-                <span class="casa">Universidad de Oriente</span>
-                <span class="fecha">2020 - 2026</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nihil officia, quos ex aliquid porro atque quam mollitia quod esse iste reiciendis soluta autem commodi nobis! Accusamus dicta dolorum aut inventore aperiam id. Reiciendis quibusdam harum excepturi dolores libero eveniet culpa minus ipsa assumenda autem. Earum doloremque excepturi neque aliquid tempore, accusamus provident? Aliquid veniam, id nihil blanditiis obcaecati, modi illum aliquam rerum unde, molestias consectetur deserunt sit?</p>
-                <div class="conectori">
-                    <div class="circuloi">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="item izq">
-                <h4>Ingenieria de Sistemas</h4>
-                <span class="casa">Universidad de Oriente</span>
-                <span class="fecha">2020 - 2026</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nihil officia, quos ex aliquid porro atque quam mollitia quod esse iste reiciendis soluta autem commodi nobis! Accusamus dicta dolorum aut inventore aperiam id. Reiciendis quibusdam harum excepturi dolores libero eveniet culpa minus ipsa assumenda autem. Earum doloremque excepturi neque aliquid tempore, accusamus provident? Aliquid veniam, id nihil blanditiis obcaecati, modi illum aliquam rerum unde, molestias consectetur deserunt sit?</p>
-                <div class="conectori">
-                    <div class="circuloi">
-                        
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col derecha">
-            <h3>Experiencia de Trabajo</h3>
-            <div class="item der">
-                <h4>WordPress Lead Developer</h4>
-                <span class="casa">Clinmedia</span>
-                <span class="fecha">Abril 2025 - Diciembre 2025</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nihil officia, quos ex aliquid porro atque quam mollitia quod esse iste reiciendis soluta autem commodi nobis! Accusamus dicta dolorum aut inventore aperiam id. Reiciendis quibusdam harum excepturi dolores libero eveniet culpa minus ipsa assumenda autem. Earum doloremque excepturi neque aliquid tempore, accusamus provident? Aliquid veniam, id nihil blanditiis obcaecati, modi illum aliquam rerum unde, molestias consectetur deserunt sit?</p>
-                <div class="conectord">
-                    <div class="circulod">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="item der">
-                <h4>Ingenieria de Sistemas</h4>
-                <span class="casa">Universidad de Oriente</span>
-                <span class="fecha">2020 - 2026</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nihil officia, quos ex aliquid porro atque quam mollitia quod esse iste reiciendis soluta autem commodi nobis! Accusamus dicta dolorum aut inventore aperiam id. Reiciendis quibusdam harum excepturi dolores libero eveniet culpa minus ipsa assumenda autem. Earum doloremque excepturi neque aliquid tempore, accusamus provident? Aliquid veniam, id nihil blanditiis obcaecati, modi illum aliquam rerum unde, molestias consectetur deserunt sit?</p>
-                <div class="conectord">
-                    <div class="circulod">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="item der">
-                <h4>Ingenieria de Sistemas</h4>
-                <span class="casa">Universidad de Oriente</span>
-                <span class="fecha">2020 - 2026</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nihil officia, quos ex aliquid porro atque quam mollitia quod esse iste reiciendis soluta autem commodi nobis! Accusamus dicta dolorum aut inventore aperiam id. Reiciendis quibusdam harum excepturi dolores libero eveniet culpa minus ipsa assumenda autem. Earum doloremque excepturi neque aliquid tempore, accusamus provident? Aliquid veniam, id nihil blanditiis obcaecati, modi illum aliquam rerum unde, molestias consectetur deserunt sit?</p>
-                <div class="conectord">
-                    <div class="circulod">
-                        
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-       </div>
-    </div>
-  </section>
-
-  <!-- seccion portafolio -->
-
-  <section class="portfolio" id="portfolio">
-    <div class="contenido-seccion">
-        <h2>Portfolio</h2>
-        <div class="galeria">
-            <div class="proyecto">
-                <img src="img/p1.jpg" alt="Proyecto 1">
-                <div class="overlay">
-                    <h3>Diseño Creativo</h3>
-                    <p>Fotografía</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p2.jpg" alt="Proyecto 2">
-                <div class="overlay">
-                    <h3>Diseño Creativo</h3>
-                    <p>Fotografía</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p3.jpg" alt="Proyecto 3">
-                <div class="overlay">
-                    <h3>Diseño Creativo</h3>
-                    <p>Fotografía</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p4.jpg" alt="Proyecto 4">
-                <div class="overlay">
-                    <h3>Diseño Creativo</h3>
-                    <p>Fotografía</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p5.jpg" alt="Proyecto 5">
-                <div class="overlay">
-                    <h3>Diseño Creativo</h3>
-                    <p>Fotografía</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p6.jpg" alt="Proyecto 6">
-                <div class="overlay">
-                    <h3>Diseño Creativo</h3>
-                    <p>Fotografía</p>
-                </div>
-            </div>
-        </div>
-  </section>
-
-  <!-- seccion de contacto -->
-
-  <section class="contacto" id="contacto">
-    <div class="contenido-seccion">
-        <h2>Contacto</h2>
-        <div class="fila">
-            <!-- Formulario -->
-            <div class="col">
-                <input type="text" placeholder="Tú Nombre">
-                <input type="number" placeholder="Número Teléfonico">
-                <input type="mail" placeholder="Dirección de Correo">
-                <input type="text" placeholder="Tema">
-                <textarea name="" id="" placeholder="Mensaje" cols="30" rows="10"></textarea>
-                <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
-                <span class="overlay"></span>
-            </div>
-            <!-- Mapa -->
-            <div class="col">
-                <img src="img/ubicacion.png" alt="">
-                <div class="info">
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
                     <ul>
                         <li>
-                            <i class="fa-solid fa-location-dot"></i>
+                            <strong>Cumpleaños</strong>
+                            26-02-1993
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +58 424 907 8597
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rafaazaf93@gmail.com
+                        </li>
+                        <!-- <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li> -->
+                        <li>
+                            <strong>Dirección</strong>
                             Venezuela, Monagas, Maturín
                         </li>
                         <li>
-                            <i class="fa-solid fa-mobile-screen"></i>
-                            Escribenos: +584249078597
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            Email: rafaazaf93@gmail.com
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
                         </li>
                     </ul>
                 </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupal</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Seccion del Footer -->
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria de Sistemas</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2019 - 2026</span>
+                        <p>Formación en Ingeniería de Sistemas con enfoque estratégico en desarrollo web, abarcando desde el diseño y maquetación con código nativo hasta soluciones avanzadas en WordPress. Experiencia en la transformación de requerimientos y procesos de negocio en plataformas digitales funcionales, escalables y optimizadas para la eficiencia organizacional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Metodologías de trabajos ágiles</h4>
+                        <span class="casa">Coursera</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Implementación estratégica y gestión de metodologías ágiles bajo los marcos de trabajo SCRUM y Kanban, orientada a la optimización de flujos de desarrollo web y software. Experiencia en la facilitación de ciclos de entrega continua, priorización eficiente de backlogs, estimación de requerimientos y eliminación de cuellos de botella para maximizar la productividad del equipo y garantizar entregas escalables y de alta calidad en tiempos óptimos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Procesos de Integración y Automatización</h4>
+                        <span class="casa">Coursera</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Diseño, optimización e integración de flujos de trabajo automatizados mediante la plataforma n8n, conectividad avanzada de APIs RESTful y la incorporación estratégica de herramientas de Inteligencia Artificial. Enfoque centrado en la eliminación de tareas repetitivas, la orquestación eficiente de sistemas interconectados y la sincronización de datos en tiempo real para potenciar la productividad y la escalabilidad operativa del negocio.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
 
-  
-    <script src="script.js"></script>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Web Developer & Project Team Lead </h4>
+                        <span class="casa">Clinmedia</span>
+                        <span class="fecha">April 2025 - February 2026</span>
+                        <p>Líder de Operaciones y Desarrollo Web, encargado de planificar y entregar mensualmente más de 60 proyectos en sectores como salud, construcción y finanzas. Incrementé la velocidad y eficiencia de las plataformas entre un 20% y un 30% mediante optimizaciones técnicas y la automatización de procesos con Inteligencia Artificial.
+
+Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de datos e integración con ERPs como Odoo) e impartí capacitaciones técnicas a los equipos de desarrollo, administración y ventas para elevar el estándar operativo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Team Lead & Full Stack Developer </h4>
+                        <span class="casa">ReCreate Company</span>
+                        <span class="fecha">January 2024 - February 2025</span>
+                        <p>Líder de Equipo e Ingeniero de Software, promovido tras 8 meses por alinear los procesos internos con estándares de calidad ISO 9000 e implementar metodologías ágiles (SCRUM y Kanban) para optimizar el rendimiento y los tiempos de entrega. Especializado en el desarrollo de soluciones a medida para clientes internacionales con React, JavaScript y Git/GitHub, integrando la automatización de flujos de trabajo con n8n para la captura de datos, agendamiento y optimización operativa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Web Developer & Technical Consultant </h4>
+                        <span class="casa">Sommos Academia</span>
+                        <span class="fecha"> January 2022 - December 2023</span>
+                        <p>Ingeniero de Sistemas, Desarrollador Web y Consultor Técnico especializado en arquitectura de software, gestión IT y metodologías ágiles (SCRUM/Kanban). Experto en soluciones digitales escalables mediante desarrollo nativo (HTML5, CSS3, JS/TS, PHP) y WordPress, integrando automatizaciones con n8n, APIs RESTful e Inteligencia Artificial para optimizar procesos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Portfolio1.webp" alt="">
+                    <a href="https://azizbegumreparto.es" target="_blank">
+                        <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portfolio2.webp" alt="">
+                    <a href="https://sushirollswasabi.es" target="_blank">
+                        <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portfolio3.webp" alt="">
+                    <a href="https://peluqueriapazosprada.es" target="_blank">
+                        <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    </a> 
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portfolio4.webp" alt="">
+                    <a href="https://cafefiaz.es" target="_blank">
+                        <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portfolio5.webp" alt="">
+
+                    <a href="https://vsonecorporation.com" target="_blank">
+                        <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Portfolio6.webp" alt="">
+                    <a href="https://geomar.cl" target="_blank">
+                        <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Venezuela, Monagas, Maturín
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +58 424 907 8597
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: rafaazaf93@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
