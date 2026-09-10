@@ -71,6 +71,9 @@ align-items: center;
 }
 
 .inicio .contenido-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     background-color: #1e2326;
     max-width: 3500px;
@@ -206,7 +209,8 @@ max-height: 800px;
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.sobremi .btn-descarga{
+    text-decoration: none;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -219,7 +223,7 @@ max-height: 800px;
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+.sobremi .btn-descarga .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -229,7 +233,7 @@ max-height: 800px;
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+.sobremi .btn-descarga:hover .overlay{
     width: 100%;
     transition: 1s;
 }
@@ -823,11 +827,23 @@ footer .arriba{
     }
 }
 @media screen and (max-width:700px){
+    .sobremi .contenido-seccion p{
+        text-align: center;
+    }
     .sobremi .fila{
-        display: block;
+       width: 100%;
+       display: flex;
+         flex-direction: column;
     }
     .sobremi .fila .col{
-        width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+        width: 100%;
+    }
+    .sobremi .fila .col .contenedor-intereses{
+        justify-content: center;
     }
 
     .skills .fila{

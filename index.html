@@ -126,10 +126,10 @@
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <a href="./img/CV_ANTONIO-WP.pdf" download="./img/CV_ANTONIO-WP.pdf" class="btn-descarga">
+    Descargar CV <i class="fa-solid fa-download"></i>
+    <span class="overlay"></span>
+</a>
         </div>
     </section>
 
@@ -311,8 +311,8 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
                     <img src="img/Portfolio1.webp" alt="">
                     <a href="https://azizbegumreparto.es" target="_blank">
                         <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Diseño Web</h3>
+                        <p>Paqueteria y Envios</p>
                     </div>
                     </a>
                 </div>
@@ -320,8 +320,8 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
                     <img src="img/Portfolio2.webp" alt="">
                     <a href="https://sushirollswasabi.es" target="_blank">
                         <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Tienda Electronica</h3>
+                        <p>Restaurante de Sushi</p>
                     </div>
                     </a>
                 </div>
@@ -329,8 +329,8 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
                     <img src="img/Portfolio3.webp" alt="">
                     <a href="https://peluqueriapazosprada.es" target="_blank">
                         <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Arquitectura Web</h3>
+                        <p>Aplicacion de Peluqueria</p>
                     </div>
                     </a> 
                 </div>
@@ -338,8 +338,8 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
                     <img src="img/Portfolio4.webp" alt="">
                     <a href="https://cafefiaz.es" target="_blank">
                         <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Desarrollo Web</h3>
+                        <p>Cafeteria</p>
                     </div>
                     </a>
                 </div>
@@ -348,8 +348,8 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
 
                     <a href="https://vsonecorporation.com" target="_blank">
                         <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Desarrollo Creativo</h3>
+                        <p>Inspección de Hogares</p>
                     </div>
                     </a>
                 </div>
@@ -357,8 +357,8 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
                     <img src="img/Portfolio6.webp" alt="">
                     <a href="https://geomar.cl" target="_blank">
                         <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Tienda Electronica</h3>
+                        <p>Comida en General</p>
                     </div>
                     </a>
                 </div>
@@ -368,44 +368,47 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
 
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form action="https://formspree.io/f/mvkolqlg" method="POST">
+                    <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                    <input type="tel" name="telefono" placeholder="Número telefónico">
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" name="asunto" placeholder="Tema" required>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Venezuela, Monagas, Maturín
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: +58 424 907 8597
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: rafaazaf93@gmail.com
-                            </li>
-                        </ul>
-                    </div>
+                </form>
+            </div>
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.png" alt="Ubicación">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Venezuela, Monagas, Maturín
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Llámanos: +58 424 907 8597
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: rafaazaf93@gmail.com
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- footer -->
     <footer>
@@ -413,11 +416,10 @@ Gestioné infraestructura crítica (migraciones de servidores, DNS, bases de dat
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+              <a href="https://www.facebook.com/antonio.rafax/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/antoniorazaf/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/antonio-azaf-679222355/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:rafaazaf93@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
 
